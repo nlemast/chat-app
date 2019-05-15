@@ -40,3 +40,14 @@
   display: flex;
   justify-content: space-around;
 }
+
+.inputText {
+  margin: 12px;
+  padding: 10px;
+}
+
+.submitBtn {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}

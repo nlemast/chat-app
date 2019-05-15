@@ -23,12 +23,13 @@ class ChatInput extends Component {
       <form className="chatSubmit" onSubmit={this.submitHandler}>
         <input
           type="text"
+          className="inputText"
           onChange={this.textChangeHandler}
           value={this.state.chatInput}
           placeholder="What's on your mind?"
           required
         />
-        <input type="submit" />
+        <input className="submitBtn" type="submit" />
       </form>
     );
   }
