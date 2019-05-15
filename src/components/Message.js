@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 class Message extends Component {
   render() {
-    return this.props.username, this.messageBody;
+    return (
+      <div className="actualMessage">
+        <div className="username">{this.props.username}</div>
+        <div className="messageBody">{this.props.messageBody}</div>
+      </div>
+    );
   }
 }
 
