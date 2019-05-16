@@ -10,6 +10,12 @@ class ChatApp extends Component {
     this.addMessage = this.addMessage.bind(this);
   }
 
+  componentDidMount() {
+    fetch('/messages')
+      .then(res => res.json())
+      .then(messages => this.setState({ messages }));
+  }
+
   sendHandler(message) {
     const messageObj = {
       username: this.props.username,
