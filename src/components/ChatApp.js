@@ -10,11 +10,11 @@ class ChatApp extends Component {
     this.addMessage = this.addMessage.bind(this);
   }
 
-  componentDidMount() {
-    fetch('/messages')
-      .then(res => res.json())
-      .then(messages => this.setState({ messages }));
-  }
+  // componentDidMount() {
+  //   fetch('/messages')
+  //     .then(res => res.json())
+  //     .then(messages => this.setState({ messages }));
+  // }
 
   sendHandler(message) {
     const messageObj = {
@@ -34,7 +34,7 @@ class ChatApp extends Component {
   render() {
     return (
       <div className="messageContainer">
-        <h1>FOOLISH ONE</h1>
+        <h1>Welcome Back {this.props.username}</h1>
         <Messages messages={this.state.messages} />
         <ChatInput onSend={this.sendHandler} />
       </div>

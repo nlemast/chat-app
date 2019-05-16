@@ -42,4 +42,10 @@ app.get('/styles.css', (req, res) => {
 
 app.post('/login', userController.createUser);
 
+app.get('/messages', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../index.html'), err => {
+    if (err) throw err;
+  });
+});
+
 app.listen(PORT, () => console.log(`You're listening on ${PORT}...`));

@@ -26,15 +26,7 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: './src/index.html'
-  //   })
-  // ],
   devServer: {
-    // contentBase: path.join(__dirname, 'dist'),
-    // port: 8080,
     publicPath: '/dist/'
-    // hotOnly: true
   }
 };
